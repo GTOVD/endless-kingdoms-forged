@@ -4,9 +4,7 @@
   "bin": {
     "next-forge": "dist/index.js"
   },
-  "files": [
-    "dist/index.js"
-  ],
+  "files": ["dist/index.js"],
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -37,11 +35,9 @@
   "packageManager": "bun@1.1.43",
   "dependencies": {
     "@clack/prompts": "^0.10.0",
-    "commander": "^13.1.0"
+    "commander": "^13.1.0",
+    "react": "^18.2.0 || ^19.0.0"
   },
   "type": "module",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"]
 }
