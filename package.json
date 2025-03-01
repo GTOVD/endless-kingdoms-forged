@@ -1,10 +1,12 @@
 {
   "name": "next-forge",
-  "version": "3.2.26",
+  "version": "3.2.27",
   "bin": {
     "next-forge": "dist/index.js"
   },
-  "files": ["dist/index.js"],
+  "files": [
+    "dist/index.js"
+  ],
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -20,7 +22,7 @@
   "devDependencies": {
     "@auto-it/first-time-contributor": "^11.3.0",
     "@biomejs/biome": "1.9.4",
-    "@repo/typescript-config": "*",
+    "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "^2.4.2",
     "@types/node": "^22.13.4",
     "tsup": "^8.3.6",
@@ -32,12 +34,10 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.1.43",
+  "packageManager": "pnpm@10.4.0",
   "dependencies": {
     "@clack/prompts": "^0.10.0",
-    "commander": "^13.1.0",
-    "react": "^18.2.0 || ^19.0.0"
+    "commander": "^13.1.0"
   },
-  "type": "module",
-  "workspaces": ["apps/*", "packages/*"]
+  "type": "module"
 }
